@@ -1,5 +1,5 @@
 {
-  "name": "sn/html-compress-twig",
+  "name": "sanhpotter/html-compress-twig",
   "type": "library",
   "description": "Twig extension for compressing HTML",
   "keywords": [
