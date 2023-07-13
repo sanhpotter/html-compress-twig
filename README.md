@@ -1,4 +1,4 @@
-# :clamp: HtmlMin for Twig: HTML Compressor and Minifier
+# 🗜 HtmlMin for Twig: HTML Compressor and Minifier
 
 ## Description
 
@@ -7,12 +7,14 @@ A [Twig](http://twig.sensiolabs.org/) extension for [voku/HtmlMin](https://githu
 Currently supported Twig features are:
 
 * Tag
-    * `{% htmlcompress %} <foo>bar</foo> {% endhtmlcompress %}`
-* Function
-    * `{{ htmlcompress(' <foo>bar</foo>') }}`
-* Filter
-    * `{{ ' <foo>bar</foo>' | htmlcompress }}`
 
+  * `{% htmlcompress %} <foo>bar</foo> {% endhtmlcompress %}`
+* Function
+
+  * `{{ htmlcompress(' <foo>bar</foo>') }}`
+* Filter
+
+  * `{{ ' <foo>bar</foo>' | htmlcompress }}`
 * [Installation](#installation)
 * [Usage](#usage)
 * [History](#history)
@@ -33,7 +35,7 @@ First register the extension with Twig:
 
 ```php
 use voku\helper\HtmlMin;
-use voku\twig\MinifyHtmlExtension;
+use sn\twig\MinifyHtmlExtension;
 
 $twig = new \Twig\Environment($loader);
 $minifier = new HtmlMin();
@@ -41,6 +43,7 @@ $twig->addExtension(new MinifyHtmlExtension($minifier));
 ```
 
 ### Register extension in symfony 4
+
 Specifying HtmlMin is needed for the autowiring.
 
 ```yaml
@@ -48,7 +51,7 @@ Specifying HtmlMin is needed for the autowiring.
         tags:
             - { name: HtmlMin }
 
-    voku\twig\MinifyHtmlExtension:
+    sn\twig\MinifyHtmlExtension:
         arguments:
             $forceCompression: false
         tags:
@@ -66,7 +69,7 @@ Then use it in your templates:
 **Compression is disabled by Twig's `debug` setting.** This is to make development easier, however you can always
 override it.
 
-The constructor of this extension takes a boolean as second parameter `$forceCompression`. When true, this will 
+The constructor of this extension takes a boolean as second parameter `$forceCompression`. When true, this will
 force compression regardless of Twig's `debug` setting. It defaults to false when omitted.
 
 ```php
@@ -74,8 +77,10 @@ $twig->addExtension(new MinifyHtmlExtension($minifier, true));
 ```
 
 ## History
+
 See [CHANGELOG](CHANGELOG.md) for the full history of changes.
 
 ## License
+
 This project is licensed under the ISC license which is MIT/GPL compatible and FSF/OSI approved.
 See the [LICENSE](LICENSE) file for the full license text.
