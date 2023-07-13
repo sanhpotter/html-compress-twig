@@ -3,6 +3,7 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/voku/html-compress-twig/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/voku/html-compress-twig/?branch=master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0497e1f5be2d43a08c0a108dc7192287)](https://www.codacy.com/app/voku/html-compress-twig?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=voku/html-compress-twig&amp;utm_campaign=Badge_Grade)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/40d6318a-64fc-4927-8438-c57b0f546949/mini.png)](https://insight.sensiolabs.com/projects/40d6318a-64fc-4927-8438-c57b0f546949)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/40d6318a-64fc-4927-8438-c57b0f546949/mini.png)](https://insight.sensiolabs.com/projects/40d6318a-64fc-4927-8438-c57b0f546949)
 [![Latest Stable Version](https://poser.pugx.org/voku/html-compress-twig/v/stable)](https://packagist.org/packages/voku/html-compress-twig) 
 [![Total Downloads](https://poser.pugx.org/voku/html-compress-twig/downloads)](https://packagist.org/packages/voku/html-compress-twig) 
 [![Latest Unstable Version](https://poser.pugx.org/voku/html-compress-twig/v/unstable)](https://packagist.org/packages/voku/html-compress-twig)
@@ -34,7 +35,7 @@ Currently supported Twig features are:
 2. Require this package via composer:
 
 ```sh
-composer require voku/html-compress-twig
+composer require sn/html-compress-twig
 ```
 
 ## Usage

@@ -1,0 +1,36 @@
+{
+  "name": "sn/html-compress-twig",
+  "type": "library",
+  "description": "Twig extension for compressing HTML",
+  "keywords": [
+    "html",
+    "compress",
+    "twig",
+    "extension",
+    "minify"
+  ],
+  "license": "ISC",
+  "authors": [
+    {
+      "name": "Sanh Nguyen",
+      "email": "sanhpotter@sanh.dev"
+    },
+    {
+      "name": "Lars Moelleken",
+      "homepage": "http://www.moelleken.org/"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "twig/twig": "~2.7 || ^3",
+    "voku/html-min": "~4.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "sn\\": "src/sn/"
+    }
+  }
+}
